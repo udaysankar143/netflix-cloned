@@ -47,7 +47,7 @@ export default NotificationView;
 
 export const Note = ({ note, setNote }: noteProps) => {
   return (
-    <div className="flex flex-row items-center px-5 py-2 bg-neutral-50 w-full">
+    <div className="flex flex-row items-center px-5 py-2 bg-neutral-50 w-full rounded-md">
       <img
         src={note?.thumbnailUrl}
         alt="pic"

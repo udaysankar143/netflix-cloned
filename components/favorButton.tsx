@@ -4,7 +4,6 @@ import useCurrentUser from "@/ownhooks/useCurrentUser";
 import useFetchfavorites from "@/ownhooks/useFetchfavorites";
 import { IoMdAdd } from "react-icons/io";
 import { TiTick } from "react-icons/ti";
-import { useSession } from "next-auth/react";
 type Props = {
   movieId: string;
 };

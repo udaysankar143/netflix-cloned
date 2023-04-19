@@ -15,6 +15,8 @@ const Banner = ({ data }: Props) => {
   return (
     <div className="relative h-[50vw] w-full">
       <video
+        autoPlay
+        muted
         src={data?.videoUrl}
         poster={data?.thumbnailUrl}
         className="w-full h-[60vw] md:h-[50vw] object-cover brightness-[60%] transition duration-500"></video>

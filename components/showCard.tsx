@@ -14,7 +14,7 @@ type movieProps = {
 };
 const ShowCard = ({ data }: Props) => {
   return (
-    <div className="p-2 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-8">
+    <div className="px-5 lg:px-10 py-5 lg:py-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-8">
       {data?.map((movie) => (
         <CardItem key={movie.id} movie={movie} />
       ))}
