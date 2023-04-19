@@ -7,10 +7,12 @@ export default async function handler(
 ) {
   try {
     if (req.method !== "GET") {
-      res.status(405).end();
+      return res.status(405).end();
     }
     const { movieId } = req.query;
-    const movie = await prismadb.movie.findUnique({ where: { id: movieId } });
+    const movie = await prismadb.movie.findUnique({
+      where: { id: movieId as string },
+    });
     return res.status(200).json(movie);
   } catch (error) {
     console.log(error);
